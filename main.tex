@@ -1,0 +1,80 @@
+
+\documentclass[a4paper,12pt]{article}
+
+
+\usepackage[T1]{fontenc}             
+\usepackage[utf8]{inputenc}          
+\usepackage[ngerman]{babel}          
+\usepackage{lmodern}                 
+\usepackage{geometry}                
+\usepackage{setspace}                
+\usepackage{microtype}               
+\usepackage{graphicx}                
+\usepackage{float}                   
+\usepackage{booktabs}                
+\usepackage{tabularx}                
+\usepackage{amsmath,amssymb}         
+\usepackage{siunitx}                 
+\usepackage{csquotes}                
+\usepackage{xurl}                    
+\usepackage{hyperref}   
+\usepackage{fontspec}
+
+\usepackage[
+    backend=biber,
+    style=authoryear,
+    sorting=nyt,
+    giveninits=false
+]{biblatex}
+
+\addbibresource{quellen.bib}
+\input{bll-zitierstil.tex}
+
+\geometry{
+  left=2cm,
+  right=4cm,
+  top=2cm,
+  bottom=3cm
+}
+\onehalfspacing
+\sisetup{locale=DE}     
+\setmainfont{Arial}
+
+\title{
+    \includegraphics[width=5cm]{logo.PNG} \\
+    \vspace{2cm}
+    \textbf{Kryptographie im Vergleich}
+    \noindent\rule{\linewidth}{0.4pt}
+    {\normalsize\textbf{Thema}}\\
+    {\large Vergleich klassischer und moderner Verschlüsselungsverfahren sowie Entwicklung eines eigenes Verfahren.}\\
+    {\normalsize\textbf{Problemfrage}}\\
+    {\large Inwiefern lassen sich klassische, moderne, und ein selbst entwickeltes Verschlüsselungsverfahren anhand ihrer mathematischen Grundlagen, Sicherheit und Funktionsweise Vergleichen?}
+    \vspace{2cm}
+}
+\author{Linus Nikolas Handke}
+
+\begin{document}
+\hypersetup{pageanchor=false} 
+
+\begin{titlepage}
+    \centering
+    \maketitle
+
+  {\normalsize BLL; Informatik, Mathematik; Herr Lessing\par}
+    \thispagestyle{empty}  
+\end{titlepage}
+
+\tableofcontents
+\thispagestyle{empty}
+\clearpage
+\setcounter{page}{3}
+
+
+
+
+
+\nocite{*}
+\printbibliography[title={Literaturverzeichnis}]
+
+\end{document}
+

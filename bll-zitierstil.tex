@@ -1,0 +1,47 @@
+
+\DeclareNameAlias{sortname}{family-given}
+\DeclareFieldFormat{url}{\url{#1}}
+\DeclareFieldFormat{edition}{#1}
+\DeclareFieldFormat{pages}{#1}
+\DeclareFieldFormat[article]{title}{#1}
+\DeclareBibliographyDriver{book}{%
+  \usebibmacro{bibindex}%
+  \usebibmacro{begentry}%
+  \printnames{author}%
+  \setunit{\addspace}%
+  \printtext[parens]{\printfield{year}}%
+  \setunit{\addcolon\space}%
+  \printfield{title}%
+  \iffieldundef{subtitle}{}{\setunit{\adddot\space}\printfield{subtitle}}%
+  \setunit{\adddot\space}%
+  \iffieldundef{edition}{}{\printfield{edition}\adddot\space Auflage\addcomma\space}%
+  \printlist{location}%
+  \setunit{\adddot\space}%
+  \usebibmacro{finentry}%
+}
+\DeclareBibliographyDriver{article}{%
+ \usebibmacro{bibindex}\usebibmacro{begentry}%
+ \printnames{author}\setunit{\addspace}%
+ \printtext[parens]{\printfield{year}}\setunit{\addcolon\space}%
+ \printfield{title}%
+ \iffieldundef{subtitle}{}{\setunit{\adddot\space}\printfield{subtitle}}%
+ \setunit{\adddot\space}\printfield{journaltitle}%
+ \setunit{\addcomma\space}%
+ \iffieldundef{number}{}{\printtext[parens]{\printfield{number}}}%
+ \setunit{\addcomma\space}%
+ \iffieldundef{pages}{}{\printtext{S\adddot\space}\printfield{pages}}%
+ \usebibmacro{finentry}%
+}
+\DeclareBibliographyDriver{online}{%
+ \usebibmacro{bibindex}\usebibmacro{begentry}%
+ \ifnameundef{author}{\printlist{organization}}{\printnames{author}}%
+ \setunit{\addspace}\printtext[parens]{\printfield{year}}%
+ \setunit{\addcolon\space}\printfield{title}%
+ \iffieldundef{subtitle}{}{\setunit{\adddot\space}\printfield{subtitle}}%
+ \setunit{\addcomma\space}%
+ \iflistundef{organization}{}{\printtext{in\addcolon\space}\printlist{organization}}%
+ \setunit{\addcomma\space}%
+ \printtext{URL\addcolon\space}\printfield{url}%
+ \iffieldundef{urlyear}{}{\setunit{\addspace}\printtext[parens]{letzter Zugriff\addcolon\space\printfield{urlday}\adddot\printfield{urlmonth}\adddot\printfield{urlyear}}}%
+ \usebibmacro{finentry}%
+}

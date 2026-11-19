@@ -1,0 +1,95 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{ArtenVerschluesselung}{online}{}{}
+      \list{organization}{1}{%
+        {Bundesamt für Sicherheit in der Informationstechnik}%
+      }
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
+      \field{labeltitlesource}{title}
+      \field{langid}{ngerman}
+      \field{title}{Arten der Verschlüsselung}
+      \field{urlday}{12}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{file}
+      \verb C:\Users\Linus\Zotero\storage\2JGNULMG\arten-der-verschluesselung.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Onlinekommunikation/Verschluesselt-kommunizieren/Arten-der-Verschluesselung/arten-der-verschluesselung.html?nn=131790
+      \endverb
+      \verb{url}
+      \verb https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Onlinekommunikation/Verschluesselt-kommunizieren/Arten-der-Verschluesselung/arten-der-verschluesselung.html?nn=131790
+      \endverb
+    \endentry
+    \entry{DatensicherheitEinstiegKryptographie}{online}{}{}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
+      \field{labeltitlesource}{title}
+      \field{title}{Datensicherheit - {{Einstieg}} in Die {{Kryptographie}}}
+      \field{urlday}{19}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{file}
+      \verb C:\Users\Linus\Zotero\storage\8XMGEZL5\stegano.html
+      \endverb
+      \verb{urlraw}
+      \verb https://sylvialange.de/krypto/stegano.htm
+      \endverb
+      \verb{url}
+      \verb https://sylvialange.de/krypto/stegano.htm
+      \endverb
+    \endentry
+    \entry{KlassischeVerschlusselungsverfahren}{online}{}{}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
+      \field{labeltitlesource}{title}
+      \field{title}{Klassische {{Verschlüsselungsverfahren}}}
+      \field{urlday}{19}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{file}
+      \verb C:\Users\Linus\Zotero\storage\LW4MB8R6\klassisch.html
+      \endverb
+      \verb{urlraw}
+      \verb https://sylvialange.de/krypto/klassisch.htm
+      \endverb
+      \verb{url}
+      \verb https://sylvialange.de/krypto/klassisch.htm
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
